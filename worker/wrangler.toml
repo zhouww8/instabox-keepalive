@@ -1,4 +1,4 @@
-name = "instabox-keepalive"
+name = "instabox-keepalive-zww"
 main = "worker.js"
 compatibility_date = "2026-10-16"
 
@@ -10,7 +10,7 @@ crons = ["*/9 * * * *"]
 [vars]
 # 非密钥的配置；INSTABOX_API_KEY（以及多账号的 _2、_3 …）用 `npx wrangler secret put ...` 存
 # INSTABOX_MACHINE 留空 = 保活该 key 名下所有机器
-INSTABOX_MACHINE = ""
+INSTABOX_MACHINE = "agent-browser-5ois"
 INSTABOX_LEASE = "keepalive"
 INSTABOX_LEASE_TTL = "900"
 # 写 KV 的频次，免费额度每天 1000 次写：hourly 每小时最多 1 条（~24/天）、every 每次都写、off 不写
